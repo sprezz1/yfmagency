@@ -148,8 +148,7 @@ export default function ApplicationWizard() {
               onChange={(e) => updateField('name', e.target.value)}
               placeholder="Enter your full name"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-lg"
-              autoFocus
-            />
+                          />
           </div>
 
           <div>
@@ -199,8 +198,7 @@ export default function ApplicationWizard() {
               onChange={(e) => updateField('nationality', e.target.value)}
               placeholder="e.g. American, Filipino, British"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-lg"
-              autoFocus
-            />
+                          />
           </div>
 
           <div>
@@ -258,8 +256,7 @@ export default function ApplicationWizard() {
               onChange={(e) => updateField('discord_username', e.target.value)}
               placeholder="e.g. username or username#1234"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-lg"
-              autoFocus
-            />
+                          />
             <p className="text-sm text-gray-500 mt-1">We'll connect with you on Discord</p>
           </div>
 

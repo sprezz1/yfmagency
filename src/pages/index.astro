@@ -5,66 +5,178 @@ import ApplicationWizard from '../components/ApplicationWizard';
 
 <Layout title="Now Hiring: Remote Social Media Posters | YFM Agency">
   <!-- Hero Section -->
-  <section class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white">
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white overflow-hidden">
     <div class="container mx-auto px-4 py-12 md:py-20">
-      <!-- Badge -->
-      <div class="text-center mb-6">
-        <span class="inline-block bg-emerald-500/20 text-emerald-400 text-sm font-semibold px-4 py-2 rounded-full border border-emerald-500/30">
-          🚀 Now Accepting Applications
-        </span>
-      </div>
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Left: Text Content -->
+        <div class="text-center md:text-left">
+          <!-- Badge -->
+          <span class="inline-block bg-emerald-500/20 text-emerald-400 text-sm font-semibold px-4 py-2 rounded-full border border-emerald-500/30 mb-6">
+            🚀 Now Accepting Applications
+          </span>
 
-      <!-- Main Headline -->
-      <div class="text-center max-w-4xl mx-auto mb-8">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Now Hiring:<br />
-          <span class="text-emerald-400">Remote Social Media Posters</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-slate-300 mb-4">
-          No experience required. We train you.
-        </p>
-        <p class="text-2xl md:text-3xl font-semibold text-white">
-          Earn <span class="text-emerald-400">$500-800/month</span> working just <span class="text-emerald-400">5 hours a day</span>
-        </p>
-      </div>
+          <!-- Main Headline -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Now Hiring:<br />
+            <span class="text-emerald-400">Remote Social Media Posters</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-slate-300 mb-4">
+            No experience required. We train you.
+          </p>
+          <p class="text-2xl md:text-3xl font-semibold text-white mb-8">
+            Earn <span class="text-emerald-400">$500-800/month</span> working just <span class="text-emerald-400">5 hours a day</span>
+          </p>
 
-      <!-- CTA Button -->
+          <!-- CTA Button -->
+          <div class="mb-8">
+            <a
+              href="#apply"
+              class="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-lg md:text-xl py-4 px-8 md:px-12 rounded-xl shadow-lg hover:shadow-emerald-500/25 transition-all hover:scale-105 active:scale-100"
+            >
+              Apply Now - It's Free
+            </a>
+            <p class="text-slate-400 text-sm mt-3">Takes less than 2 minutes</p>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="flex flex-wrap justify-center md:justify-start gap-4 text-slate-400 text-sm">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Work From Home</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Flexible Hours</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Free Training</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Hero Image -->
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-emerald-500/20">
+            <img
+              src="/philipino_work_from_home.jpg"
+              alt="Happy Filipinos working from home on their phones"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <!-- Decorative elements -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-emerald-500/20 rounded-full blur-2xl"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Preview Section -->
+  <section class="py-16 md:py-20 bg-slate-50">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Left: Community Image -->
+        <div class="order-2 md:order-1">
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="/yfm_community.jpg"
+              alt="YFM Agency Discord Community"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="order-1 md:order-2 text-center md:text-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Join Our Growing Community
+          </h2>
+          <p class="text-lg text-slate-600 mb-6">
+            You're not alone in this journey. Connect with hundreds of other remote workers in our Discord community. Get support, share wins, and learn from each other.
+          </p>
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>24/7 community support</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Weekly training sessions</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Share tips & celebrate wins</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- From Posting to Payday Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <a
-          href="#apply"
-          class="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-lg md:text-xl py-4 px-8 md:px-12 rounded-xl shadow-lg hover:shadow-emerald-500/25 transition-all hover:scale-105 active:scale-100"
-        >
-          Apply Now - It's Free
-        </a>
-        <p class="text-slate-400 text-sm mt-3">Takes less than 2 minutes</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          From Posting to Payday
+        </h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+          It's simple: post content from your phone, get paid directly to your GCash
+        </p>
       </div>
 
-      <!-- Trust Indicators -->
-      <div class="flex flex-wrap justify-center gap-6 text-slate-400 text-sm">
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-          </svg>
-          <span>Work From Home</span>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 max-w-4xl mx-auto">
+        <!-- Phone 1: Marketing Example -->
+        <div class="text-center">
+          <div class="bg-slate-100 rounded-3xl p-4 shadow-lg max-w-[280px] mx-auto">
+            <img
+              src="/marketing_phone_example.jpg"
+              alt="Social media posting example on phone"
+              class="rounded-2xl w-full h-auto"
+            />
+          </div>
+          <p class="mt-4 font-semibold text-slate-900">Post Content</p>
+          <p class="text-sm text-slate-500">Schedule posts from your phone</p>
         </div>
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+
+        <!-- Arrow -->
+        <div class="flex items-center justify-center py-4 md:py-0">
+          <svg class="w-12 h-12 text-emerald-500 rotate-90 md:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
-          <span>Flexible Hours</span>
         </div>
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-          </svg>
-          <span>Free Training</span>
+
+        <!-- Phone 2: GCash Confirmation -->
+        <div class="text-center">
+          <div class="bg-slate-100 rounded-3xl p-4 shadow-lg max-w-[280px] mx-auto">
+            <img
+              src="/gcash_phone_confirmation.jpg"
+              alt="GCash payment received confirmation"
+              class="rounded-2xl w-full h-auto"
+            />
+          </div>
+          <p class="mt-4 font-semibold text-slate-900">Get Paid</p>
+          <p class="text-sm text-slate-500">Receive payments via GCash</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- What You'll Do Section -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-slate-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -113,7 +225,7 @@ import ApplicationWizard from '../components/ApplicationWizard';
   </section>
 
   <!-- What We Teach Section -->
-  <section class="py-16 md:py-24 bg-slate-50">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -165,7 +277,7 @@ import ApplicationWizard from '../components/ApplicationWizard';
   </section>
 
   <!-- Testimonials Section -->
-  <section class="py-16 md:py-24 bg-white">
+  <section class="py-16 md:py-24 bg-slate-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -178,7 +290,7 @@ import ApplicationWizard from '../components/ApplicationWizard';
 
       <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         <!-- Testimonial 1 -->
-        <div class="bg-slate-50 rounded-2xl p-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -194,7 +306,7 @@ import ApplicationWizard from '../components/ApplicationWizard';
         </div>
 
         <!-- Testimonial 2 -->
-        <div class="bg-slate-50 rounded-2xl p-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -210,7 +322,7 @@ import ApplicationWizard from '../components/ApplicationWizard';
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="bg-slate-50 rounded-2xl p-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -226,7 +338,7 @@ import ApplicationWizard from '../components/ApplicationWizard';
         </div>
 
         <!-- Testimonial 4 -->
-        <div class="bg-slate-50 rounded-2xl p-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
